@@ -59,7 +59,7 @@ docker build -t media-link-parser .
 #### 启动容器
 
 ```shell
-docker run -p 8000:8000 media-link-parser
+docker run --name mlp -p 8000:8000 -d media-link-parser
 ```
 
 ## Endpoints
