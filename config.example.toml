@@ -1,0 +1,35 @@
+# 作品数据/文件保存根路径，默认值：项目根路径
+work_path = "./data"
+
+# 作品文件储存文件夹名称（自动创建），默认值：Download
+folder_name = "Download"
+
+# 请求头 User-Agent，可选参数
+user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+
+# 小红书网页版 Cookie，无需登录，必需参数
+cookie = "Your Cookie Here"
+
+# 网络代理
+proxy = ""
+
+# 请求数据超时限制，单位：秒，默认值：10
+timeout = 5
+
+# 下载文件时，每次从服务器获取的数据块大小，单位：字节
+chunk = 1048576
+
+# 请求数据失败时，重试的最大次数，单位：秒，默认值：5
+max_retry = 2
+
+# 是否记录作品数据至文件
+record_data = false
+
+# 图文作品文件下载格式，支持：PNG、WEBP
+image_format = "WEBP"
+
+# 是否将每个作品的文件储存至单独的文件夹
+folder_mode = false
+
+# 设置程序语言，目前支持：zh-CN、en-GB
+language = "zh-CN"
