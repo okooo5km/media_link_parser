@@ -33,3 +33,9 @@ folder_mode = false
 
 # 设置程序语言，目前支持：zh-CN、en-GB
 language = "zh-CN"
+
+# 是否下载作品文件，默认值：False
+download = false
+
+# 高效模式，禁用请求延时
+efficient = false
