@@ -1,6 +1,8 @@
-# xhs_media_parser
+# media_link_parser
 
 这是一个使用 [XHS-Downloader](https://github.com/JoeanAmier/XHS-Downloader.git) 作为解析核心的工具，主要提供视频下载链接和作品信息解析的 API。
+
+目前支持小红书视频下载链接的解析。
 
 两种方式部署使用：
 
@@ -12,7 +14,7 @@
 开始之前，拉取代码，本项目使用其他仓库作为子模块。
 
 ```shell
-git clone --recurse-submodules https://github.com/okooo5km/xhs_media_parser
+git clone --recurse-submodules https://github.com/okooo5km/media_link_parser
 cd xhs_media_parser
 ```
 
@@ -51,20 +53,20 @@ python xhs.py
 #### 制作镜像
 
 ```shell
-docker build -t xhs-media-parser .
+docker build -t media-link-parser .
 ```
 
 #### 启动容器
 
 ```shell
-docker run -p 8000:8000 xhs-media-parser
+docker run -p 8000:8000 media-link-parser
 ```
 
 ## Endpoints
 
 部署成功后可以通过 `https://127.0.0.1:8000/docs` 查看接口信息。
 
-目前只有一个：`/parse`：
+目前只有一个：`/xhs`：
 
 POST 方法，数据为 json 格式：
 

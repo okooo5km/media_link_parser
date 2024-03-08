@@ -62,7 +62,7 @@ async def parse_xhs_videos(urls: List[str] = ["https://www.xiaohongshu.com/explo
         return info
 
 
-@app.post("/parse/video")
+@app.post("/xhs")
 async def parse(urls: UrlData):
     return await parse_xhs_videos(urls.urls)
 
